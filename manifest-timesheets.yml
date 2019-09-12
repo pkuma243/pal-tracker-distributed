@@ -3,12 +3,12 @@ applications:
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
   - route: timesheets-pal-priyendu-rudra.cfapps.io
-  memory: 1G
+  memory: 475M
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-pal-priyendu-rudra.cfapps.io
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ },memory_calculator:{stack_threads:100 }'
-    JAVA_OPTS: '-xms64m -xmx256m'
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: {stack_threads: 100} }'
+    JAVA_OPTS: '-Xms64m -Xmx256m'
     GRANT_TYPE: client_credentials
   services:
   - tracker-timesheets-database
