@@ -2,11 +2,13 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: backlog-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  - route: backlog-pal-priyendu-rudra.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-priyendu-rudra.cfapps.io
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ },memory_calculator:{stack_threads:100 }'
+    JAVA_OPTS: '-xms64m -xmx256m'
+    GRANT_TYPE: client_credentials
   services:
   - tracker-backlog-database

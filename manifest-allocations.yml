@@ -2,11 +2,13 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
-  memory: 1G
+  - route: allocations-pal-priyendu-rudra.cfapps.io
+  memory: 475M
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-priyendu-rudra.cfapps.io
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ },memory_calculator:{stack_threads:100 }'
+    JAVA_OPTS: '-xms64m -xmx256m'
+    GRANT_TYPE: client_credentials
   services:
   - tracker-allocations-database
