@@ -9,6 +9,7 @@ applications:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: {stack_threads: 100} }'
     JAVA_OPTS: '-Xms64m -Xmx256m'
     GRANT_TYPE: client_credentials
+    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
   services:
   - tracker-timesheets-database
   - tracker-service-registry
