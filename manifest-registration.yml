@@ -11,3 +11,4 @@ applications:
     GRANT_TYPE: client_credentials
   services:
   - tracker-registration-database
+  - tracker-service-registry
