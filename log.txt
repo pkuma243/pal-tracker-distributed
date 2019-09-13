@@ -1,0 +1,1002 @@
+Retrieving logs for app tracker-backlog in org pcfassignment / space review as priyendu.kumar@wipro.com...
+
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:43:02.086  INFO 15 --- [           main] ConditionEvaluationReportLoggingListener : 
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:43:02.088 ERROR 15 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT org.springframework.context.ApplicationContextException: Failed to start bean 'outputBindingLifecycle'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'binderHealthIndicator' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$RabbitHealthIndicatorConfiguration: Unsatisfied dependency expressed through method 'binderHealthIndicator' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rabbitTemplate' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Unsatisfied dependency expressed through method 'rabbitTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rabbitConnectionFactory' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.amqp.rabbit.connection.ConnectionFactory]: Factory method 'rabbitConnectionFactory' threw exception; nested exception is org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'binderHealthIndicator' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$RabbitHealthIndicatorConfiguration: Unsatisfied dependency expressed through method 'binderHealthIndicator' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rabbitTemplate' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Unsatisfied dependency expressed through method 'rabbitTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rabbitConnectionFactory' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.amqp.rabbit.connection.ConnectionFactory]: Factory method 'rabbitConnectionFactory' threw exception; nested exception is org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:733) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.DefaultBinderFactory.getBinderInstance(DefaultBinderFactory.java:206) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.DefaultBinderFactory.getBinder(DefaultBinderFactory.java:139) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.BindingService.getBinder(BindingService.java:308) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.BindingService.bindProducer(BindingService.java:208) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.BindableProxyFactory.bindOutputs(BindableProxyFactory.java:252) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.OutputBindingLifecycle.doStartWithBindable(OutputBindingLifecycle.java:46) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.Iterator.forEachRemaining(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(AbstractBindingLifecycle.java:47) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binding.OutputBindingLifecycle.start(OutputBindingLifecycle.java:29) ~[spring-cloud-stream-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	... 22 common frames omitted
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rabbitTemplate' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Unsatisfied dependency expressed through method 'rabbitTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rabbitConnectionFactory' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.amqp.rabbit.connection.ConnectionFactory]: Factory method 'rabbitConnectionFactory' threw exception; nested exception is org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:733) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	... 50 common frames omitted
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rabbitConnectionFactory' defined in org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.amqp.rabbit.connection.ConnectionFactory]: Factory method 'rabbitConnectionFactory' threw exception; nested exception is org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:591) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	... 64 common frames omitted
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.amqp.rabbit.connection.ConnectionFactory]: Factory method 'rabbitConnectionFactory' threw exception; nested exception is org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:583) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	... 77 common frames omitted
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT Caused by: org.springframework.cloud.CloudException: No unique service matching interface org.springframework.amqp.rabbit.connection.ConnectionFactory found. Expected 1, found 0
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.Cloud.getSingletonServiceConnector(Cloud.java:197) ~[spring-cloud-connectors-core-2.0.3.RELEASE.jar!/:na]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors.rabbitConnectionFactory(RabbitServiceAutoConfiguration.java:110) ~[spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors$$EnhancerBySpringCGLIB$$9fbbb487.CGLIB$rabbitConnectionFactory$1(<generated>) ~[spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors$$EnhancerBySpringCGLIB$$9fbbb487$$FastClassBySpringCGLIB$$5d3f6d94.invoke(<generated>) ~[spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.stream.binder.rabbit.config.RabbitServiceAutoConfiguration$CloudProfile$CloudConnectors$UseCloudConnectors$$EnhancerBySpringCGLIB$$9fbbb487.rabbitConnectionFactory(<generated>) ~[spring-cloud-stream-binder-rabbit-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:43:02.08-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:43:02.09-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.09-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.09-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:43:02.09-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:43:02.09-0700 [APP/PROC/WEB/0] OUT 	... 78 common frames omitted
+   2019-09-13T04:43:02.48-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:43:02.48-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:43:08.10-0700 [CELL/0] OUT Cell f237c36d-0a62-4579-a51b-b11ee1d58145 stopping instance 4df1633c-ec15-4ea8-4565-b345
+   2019-09-13T04:43:08.10-0700 [CELL/0] OUT Cell f237c36d-0a62-4579-a51b-b11ee1d58145 destroying container for instance 4df1633c-ec15-4ea8-4565-b345
+   2019-09-13T04:43:08.13-0700 [API/0] OUT Process has crashed with type: "web"
+   2019-09-13T04:43:08.15-0700 [API/0] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"4df1633c-ec15-4ea8-4565-b345", "index"=>0, "cell_id"=>"f237c36d-0a62-4579-a51b-b11ee1d58145", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>7, "crash_timestamp"=>1568374988174361918, "version"=>"d6978982-d4b3-43c8-be25-da4a514f0f47"}
+   2019-09-13T04:43:08.35-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:43:08.77-0700 [CELL/0] OUT Cell f237c36d-0a62-4579-a51b-b11ee1d58145 successfully destroyed container for instance 4df1633c-ec15-4ea8-4565-b345
+   2019-09-13T04:49:39.38-0700 [API/15] OUT Updated app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de ({"buildpack"=>"", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>475, "name"=>"tracker-backlog", "space_guid"=>"18b99199-c2a5-4cf8-b097-155af24fe9c3"})
+   2019-09-13T04:49:44.37-0700 [API/14] OUT Uploading bits for app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de
+   2019-09-13T04:49:54.07-0700 [API/12] OUT Updated app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de ({"state"=>"STOPPED"})
+   2019-09-13T04:49:54.42-0700 [API/8] OUT Creating build for app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de
+   2019-09-13T04:49:55.30-0700 [API/8] OUT Updated app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de ({"state"=>"STARTED"})
+   2019-09-13T04:49:55.40-0700 [STG/0] OUT Downloading dotnet_core_buildpack_beta...
+   2019-09-13T04:49:55.40-0700 [STG/0] OUT Downloading go_buildpack...
+   2019-09-13T04:49:55.40-0700 [STG/0] OUT Downloading ruby_buildpack...
+   2019-09-13T04:49:55.40-0700 [STG/0] OUT Downloading java_buildpack...
+   2019-09-13T04:49:55.40-0700 [STG/0] OUT Downloading python_buildpack...
+   2019-09-13T04:49:55.43-0700 [STG/0] OUT Downloaded go_buildpack
+   2019-09-13T04:49:55.43-0700 [STG/0] OUT Downloading php_buildpack...
+   2019-09-13T04:49:55.43-0700 [STG/0] OUT Downloaded python_buildpack
+   2019-09-13T04:49:55.43-0700 [STG/0] OUT Downloading binary_buildpack...
+   2019-09-13T04:49:55.45-0700 [STG/0] OUT Downloaded ruby_buildpack
+   2019-09-13T04:49:55.45-0700 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2019-09-13T04:49:55.45-0700 [STG/0] OUT Downloaded php_buildpack
+   2019-09-13T04:49:55.45-0700 [STG/0] OUT Downloading nodejs_buildpack...
+   2019-09-13T04:49:55.45-0700 [STG/0] OUT Downloaded dotnet_core_buildpack_beta
+   2019-09-13T04:49:55.47-0700 [STG/0] OUT Downloaded binary_buildpack
+   2019-09-13T04:49:55.47-0700 [STG/0] OUT Downloading staticfile_buildpack...
+   2019-09-13T04:49:55.49-0700 [STG/0] OUT Downloaded nodejs_buildpack
+   2019-09-13T04:49:55.49-0700 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2019-09-13T04:49:55.54-0700 [STG/0] OUT Downloaded java_buildpack
+   2019-09-13T04:49:55.54-0700 [STG/0] OUT Downloaded staticfile_buildpack
+   2019-09-13T04:49:55.54-0700 [STG/0] OUT Cell e6c5e16e-1195-480a-b1ea-1d111965d95b creating container for instance 6c1c81ba-d89f-470e-a346-cf0168b1bd43
+   2019-09-13T04:49:56.44-0700 [STG/0] OUT Cell e6c5e16e-1195-480a-b1ea-1d111965d95b successfully created container for instance 6c1c81ba-d89f-470e-a346-cf0168b1bd43
+   2019-09-13T04:49:56.72-0700 [STG/0] OUT Downloading app package...
+   2019-09-13T04:49:56.72-0700 [STG/0] OUT Downloading build artifacts cache...
+   2019-09-13T04:49:56.76-0700 [STG/0] ERR Downloading build artifacts cache failed
+   2019-09-13T04:49:58.83-0700 [STG/0] OUT Downloaded app package (48.6M)
+   2019-09-13T04:50:03.33-0700 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.21[0m [34m(offline)[0m | https://github.com/cloudfoundry/java-buildpack.git#0bc7378
+   2019-09-13T04:50:03.41-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:03.41-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m11.0.4_11[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-11.0.4_11-bionic.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:05.03-0700 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.6s)[0m[23m
+   2019-09-13T04:50:05.03-0700 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-09-13T04:50:05.03-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:06.21-0700 [STG/0] OUT        Loaded Classes: 27502, Threads: 100
+   2019-09-13T04:50:06.24-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.11.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:06.24-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:06.24-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mMetric Writer[0m[22m [34m3.1.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/metric-writer/metric-writer-3.1.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:06.24-0700 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.8.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-09-13T04:50:21.17-0700 [STG/0] OUT Exit status 0
+   2019-09-13T04:50:21.17-0700 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-09-13T04:50:21.17-0700 [STG/0] OUT Uploading build artifacts cache...
+   2019-09-13T04:50:21.17-0700 [STG/0] OUT Uploading droplet...
+   2019-09-13T04:50:21.31-0700 [STG/0] OUT Uploaded build artifacts cache (131B)
+   2019-09-13T04:50:22.55-0700 [API/19] OUT Creating droplet for app with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de
+   2019-09-13T04:50:28.81-0700 [STG/0] OUT Uploaded droplet (93.5M)
+   2019-09-13T04:50:28.83-0700 [STG/0] OUT Uploading complete
+   2019-09-13T04:50:29.29-0700 [STG/0] OUT Cell e6c5e16e-1195-480a-b1ea-1d111965d95b stopping instance 6c1c81ba-d89f-470e-a346-cf0168b1bd43
+   2019-09-13T04:50:29.29-0700 [STG/0] OUT Cell e6c5e16e-1195-480a-b1ea-1d111965d95b destroying container for instance 6c1c81ba-d89f-470e-a346-cf0168b1bd43
+   2019-09-13T04:50:29.87-0700 [CELL/0] OUT Cell e222f891-b602-4a15-9b26-fd45771f60ad creating container for instance 4dac4f31-2766-437d-7451-2a17
+   2019-09-13T04:50:30.78-0700 [CELL/0] OUT Cell e222f891-b602-4a15-9b26-fd45771f60ad successfully created container for instance 4dac4f31-2766-437d-7451-2a17
+   2019-09-13T04:50:31.10-0700 [CELL/0] OUT Downloading droplet...
+   2019-09-13T04:50:31.77-0700 [STG/0] OUT Cell e6c5e16e-1195-480a-b1ea-1d111965d95b successfully destroyed container for instance 6c1c81ba-d89f-470e-a346-cf0168b1bd43
+   2019-09-13T04:50:34.75-0700 [CELL/0] OUT Downloaded droplet (93.5M)
+   2019-09-13T04:50:34.75-0700 [CELL/0] OUT Starting health monitoring of container
+   2019-09-13T04:50:35.78-0700 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=176864K
+   2019-09-13T04:50:39.33-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.329  INFO 13 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-13T04:50:39.33-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.336  INFO 13 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-13T04:50:39.40-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.406  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.41-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.411  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.41-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.412  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.41-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.415  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.41-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.418  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.43-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.433  INFO 13 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78123e82: startup date [Fri Sep 13 11:50:39 UTC 2019]; root of context hierarchy
+   2019-09-13T04:50:39.64-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.643  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.66-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.660  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.74-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.746  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.74-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.747  INFO 13 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:39.81-0700 [APP/PROC/WEB/0] ERR WARNING: An illegal reflective access operation has occurred
+   2019-09-13T04:50:39.81-0700 [APP/PROC/WEB/0] ERR WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/vcap/app/BOOT-INF/lib/spring-core-5.0.10.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+   2019-09-13T04:50:39.81-0700 [APP/PROC/WEB/0] ERR WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+   2019-09-13T04:50:39.81-0700 [APP/PROC/WEB/0] ERR WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+   2019-09-13T04:50:39.81-0700 [APP/PROC/WEB/0] ERR WARNING: All illegal access operations will be denied in a future release
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.937 ERROR 13 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:50:39.93-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.939  INFO 13 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@78123e82: startup date [Fri Sep 13 11:50:39 UTC 2019]; root of context hierarchy
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:39.947 ERROR 13 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:39.94-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:50:40.03-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:50:40.03-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:50:45.28-0700 [CELL/0] OUT Cell e222f891-b602-4a15-9b26-fd45771f60ad stopping instance 4dac4f31-2766-437d-7451-2a17
+   2019-09-13T04:50:45.28-0700 [CELL/0] OUT Cell e222f891-b602-4a15-9b26-fd45771f60ad destroying container for instance 4dac4f31-2766-437d-7451-2a17
+   2019-09-13T04:50:45.29-0700 [API/8] OUT Process has crashed with type: "web"
+   2019-09-13T04:50:45.31-0700 [API/8] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"4dac4f31-2766-437d-7451-2a17", "index"=>0, "cell_id"=>"e222f891-b602-4a15-9b26-fd45771f60ad", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1568375445340471684, "version"=>"2a4de49f-27bb-4c73-8808-d02454e65fee"}
+   2019-09-13T04:50:45.46-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:50:45.47-0700 [CELL/0] OUT Cell 46c88bda-8f44-4821-a76e-26a1f46ebeb4 creating container for instance ecb3f749-fc2b-4547-6be2-9803
+   2019-09-13T04:50:45.72-0700 [CELL/0] OUT Cell e222f891-b602-4a15-9b26-fd45771f60ad successfully destroyed container for instance 4dac4f31-2766-437d-7451-2a17
+   2019-09-13T04:50:46.68-0700 [CELL/0] OUT Cell 46c88bda-8f44-4821-a76e-26a1f46ebeb4 successfully created container for instance ecb3f749-fc2b-4547-6be2-9803
+   2019-09-13T04:50:46.94-0700 [CELL/0] OUT Downloading droplet...
+   2019-09-13T04:50:50.56-0700 [CELL/0] OUT Downloaded droplet (93.5M)
+   2019-09-13T04:50:50.56-0700 [CELL/0] OUT Starting health monitoring of container
+   2019-09-13T04:50:51.33-0700 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=176864K
+   2019-09-13T04:50:54.78-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.786  INFO 12 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-13T04:50:54.79-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.791  INFO 12 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-13T04:50:54.85-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.852  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:54.85-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.858  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:54.85-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.859  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:54.86-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.861  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:54.86-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.862  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:54.87-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:54.878  INFO 12 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@27ff5d15: startup date [Fri Sep 13 11:50:54 UTC 2019]; root of context hierarchy
+   2019-09-13T04:50:55.08-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.082  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:55.08-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.089  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:55.15-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.153  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:55.15-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.154  INFO 12 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:50:55.23-0700 [APP/PROC/WEB/0] ERR WARNING: An illegal reflective access operation has occurred
+   2019-09-13T04:50:55.23-0700 [APP/PROC/WEB/0] ERR WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/vcap/app/BOOT-INF/lib/spring-core-5.0.10.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+   2019-09-13T04:50:55.23-0700 [APP/PROC/WEB/0] ERR WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+   2019-09-13T04:50:55.23-0700 [APP/PROC/WEB/0] ERR WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+   2019-09-13T04:50:55.23-0700 [APP/PROC/WEB/0] ERR WARNING: All illegal access operations will be denied in a future release
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.331 ERROR 12 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.332  INFO 12 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@27ff5d15: startup date [Fri Sep 13 11:50:54 UTC 2019]; root of context hierarchy
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:50:55.336 ERROR 12 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:50:55.33-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:50:55.44-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:50:55.45-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:51:00.87-0700 [CELL/0] OUT Cell 46c88bda-8f44-4821-a76e-26a1f46ebeb4 stopping instance ecb3f749-fc2b-4547-6be2-9803
+   2019-09-13T04:51:00.87-0700 [CELL/0] OUT Cell 46c88bda-8f44-4821-a76e-26a1f46ebeb4 destroying container for instance ecb3f749-fc2b-4547-6be2-9803
+   2019-09-13T04:51:00.89-0700 [API/9] OUT Process has crashed with type: "web"
+   2019-09-13T04:51:00.91-0700 [API/9] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"ecb3f749-fc2b-4547-6be2-9803", "index"=>0, "cell_id"=>"46c88bda-8f44-4821-a76e-26a1f46ebeb4", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1568375460928986375, "version"=>"2a4de49f-27bb-4c73-8808-d02454e65fee"}
+   2019-09-13T04:51:01.02-0700 [CELL/0] OUT Cell be64ad74-2cea-42e3-b62c-3e25fcdf8230 creating container for instance 548967ea-4a19-4719-4741-d936
+   2019-09-13T04:51:01.03-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:51:01.43-0700 [CELL/0] OUT Cell 46c88bda-8f44-4821-a76e-26a1f46ebeb4 successfully destroyed container for instance ecb3f749-fc2b-4547-6be2-9803
+   2019-09-13T04:51:02.34-0700 [CELL/0] OUT Cell be64ad74-2cea-42e3-b62c-3e25fcdf8230 successfully created container for instance 548967ea-4a19-4719-4741-d936
+   2019-09-13T04:51:03.01-0700 [CELL/0] OUT Downloading droplet...
+   2019-09-13T04:51:07.69-0700 [CELL/0] OUT Downloaded droplet (93.5M)
+   2019-09-13T04:51:07.69-0700 [CELL/0] OUT Starting health monitoring of container
+   2019-09-13T04:51:08.71-0700 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=176864K
+   2019-09-13T04:51:16.25-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.248  INFO 26 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-13T04:51:16.25-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.256  INFO 26 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-13T04:51:16.41-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.416  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.42-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.428  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.42-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.429  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.44-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.434  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.45-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.450  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.49-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.493  INFO 26 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@50ad3bc1: startup date [Fri Sep 13 11:51:16 UTC 2019]; root of context hierarchy
+   2019-09-13T04:51:16.83-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.839  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:16.84-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:16.849  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:17.01-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:17.009  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:17.01-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:17.010  INFO 26 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:51:17.13-0700 [APP/PROC/WEB/0] ERR WARNING: An illegal reflective access operation has occurred
+   2019-09-13T04:51:17.13-0700 [APP/PROC/WEB/0] ERR WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/vcap/app/BOOT-INF/lib/spring-core-5.0.10.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+   2019-09-13T04:51:17.13-0700 [APP/PROC/WEB/0] ERR WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+   2019-09-13T04:51:17.13-0700 [APP/PROC/WEB/0] ERR WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+   2019-09-13T04:51:17.13-0700 [APP/PROC/WEB/0] ERR WARNING: All illegal access operations will be denied in a future release
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:17.442 ERROR 26 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.44-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:51:17.45-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:17.445  INFO 26 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@50ad3bc1: startup date [Fri Sep 13 11:51:16 UTC 2019]; root of context hierarchy
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:51:17.508 ERROR 26 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:51:17.50-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:51:17.63-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:51:17.63-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:51:22.98-0700 [CELL/0] OUT Cell be64ad74-2cea-42e3-b62c-3e25fcdf8230 stopping instance 548967ea-4a19-4719-4741-d936
+   2019-09-13T04:51:22.98-0700 [CELL/0] OUT Cell be64ad74-2cea-42e3-b62c-3e25fcdf8230 destroying container for instance 548967ea-4a19-4719-4741-d936
+   2019-09-13T04:51:23.01-0700 [API/16] OUT Process has crashed with type: "web"
+   2019-09-13T04:51:23.03-0700 [API/16] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"548967ea-4a19-4719-4741-d936", "index"=>0, "cell_id"=>"be64ad74-2cea-42e3-b62c-3e25fcdf8230", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1568375483052129778, "version"=>"2a4de49f-27bb-4c73-8808-d02454e65fee"}
+   2019-09-13T04:51:23.21-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:51:23.63-0700 [CELL/0] OUT Cell be64ad74-2cea-42e3-b62c-3e25fcdf8230 successfully destroyed container for instance 548967ea-4a19-4719-4741-d936
+   2019-09-13T04:52:21.91-0700 [CELL/0] OUT Cell f86d1112-f452-4f07-b965-8635a9ffa926 creating container for instance cdafc6a8-0520-46d3-601c-5286
+   2019-09-13T04:52:22.73-0700 [CELL/0] OUT Cell f86d1112-f452-4f07-b965-8635a9ffa926 successfully created container for instance cdafc6a8-0520-46d3-601c-5286
+   2019-09-13T04:52:23.07-0700 [CELL/0] OUT Downloading droplet...
+   2019-09-13T04:52:27.31-0700 [CELL/0] OUT Downloaded droplet (93.5M)
+   2019-09-13T04:52:27.31-0700 [CELL/0] OUT Starting health monitoring of container
+   2019-09-13T04:52:28.91-0700 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=176864K
+   2019-09-13T04:52:34.84-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.837  INFO 7 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-13T04:52:34.84-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.845  INFO 7 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-13T04:52:34.92-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.923  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:34.92-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.929  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:34.93-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.930  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:34.93-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.933  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:34.93-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.934  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:34.95-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:34.951  INFO 7 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2dde1bff: startup date [Fri Sep 13 11:52:34 UTC 2019]; root of context hierarchy
+   2019-09-13T04:52:35.19-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.196  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:35.21-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.212  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:35.28-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.284  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:35.28-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.285  INFO 7 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:52:35.36-0700 [APP/PROC/WEB/0] ERR WARNING: An illegal reflective access operation has occurred
+   2019-09-13T04:52:35.36-0700 [APP/PROC/WEB/0] ERR WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/vcap/app/BOOT-INF/lib/spring-core-5.0.10.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+   2019-09-13T04:52:35.36-0700 [APP/PROC/WEB/0] ERR WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+   2019-09-13T04:52:35.36-0700 [APP/PROC/WEB/0] ERR WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+   2019-09-13T04:52:35.36-0700 [APP/PROC/WEB/0] ERR WARNING: All illegal access operations will be denied in a future release
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.470 ERROR 7 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.472  INFO 7 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2dde1bff: startup date [Fri Sep 13 11:52:34 UTC 2019]; root of context hierarchy
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:52:35.477 ERROR 7 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:52:35.47-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:52:35.56-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:52:35.57-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:52:41.11-0700 [CELL/0] OUT Cell f86d1112-f452-4f07-b965-8635a9ffa926 stopping instance cdafc6a8-0520-46d3-601c-5286
+   2019-09-13T04:52:41.11-0700 [CELL/0] OUT Cell f86d1112-f452-4f07-b965-8635a9ffa926 destroying container for instance cdafc6a8-0520-46d3-601c-5286
+   2019-09-13T04:52:41.14-0700 [API/5] OUT Process has crashed with type: "web"
+   2019-09-13T04:52:41.17-0700 [API/5] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"cdafc6a8-0520-46d3-601c-5286", "index"=>0, "cell_id"=>"f86d1112-f452-4f07-b965-8635a9ffa926", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1568375561186121611, "version"=>"2a4de49f-27bb-4c73-8808-d02454e65fee"}
+   2019-09-13T04:52:41.32-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:52:41.63-0700 [CELL/0] OUT Cell f86d1112-f452-4f07-b965-8635a9ffa926 successfully destroyed container for instance cdafc6a8-0520-46d3-601c-5286
+   2019-09-13T04:53:56.19-0700 [CELL/0] OUT Cell bb1579a8-7173-47c5-8586-5f1737e1816e creating container for instance 5b90519d-0e9c-41bb-5772-1a98
+   2019-09-13T04:53:57.44-0700 [CELL/0] OUT Cell bb1579a8-7173-47c5-8586-5f1737e1816e successfully created container for instance 5b90519d-0e9c-41bb-5772-1a98
+   2019-09-13T04:53:58.36-0700 [CELL/0] OUT Downloading droplet...
+   2019-09-13T04:54:02.94-0700 [CELL/0] OUT Downloaded droplet (93.5M)
+   2019-09-13T04:54:02.94-0700 [CELL/0] OUT Starting health monitoring of container
+   2019-09-13T04:54:04.63-0700 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=176864K
+   2019-09-13T04:54:11.06-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.059  INFO 6 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2019-09-13T04:54:11.06-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.068  INFO 6 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2019-09-13T04:54:11.17-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.174  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.18-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.182  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.18-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.183  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.18-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.187  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.18-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.188  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.21-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.219  INFO 6 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5403f35f: startup date [Fri Sep 13 11:54:11 UTC 2019]; root of context hierarchy
+   2019-09-13T04:54:11.47-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.474  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.48-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.482  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.61-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.611  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.VaultPropertyMaskingContextInitializer: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.61-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.612  INFO 6 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+   2019-09-13T04:54:11.72-0700 [APP/PROC/WEB/0] ERR WARNING: An illegal reflective access operation has occurred
+   2019-09-13T04:54:11.72-0700 [APP/PROC/WEB/0] ERR WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/home/vcap/app/BOOT-INF/lib/spring-core-5.0.10.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+   2019-09-13T04:54:11.72-0700 [APP/PROC/WEB/0] ERR WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+   2019-09-13T04:54:11.72-0700 [APP/PROC/WEB/0] ERR WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+   2019-09-13T04:54:11.72-0700 [APP/PROC/WEB/0] ERR WARNING: All illegal access operations will be denied in a future release
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.813 ERROR 6 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:54:11.81-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.815  INFO 6 --- [           main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5403f35f: startup date [Fri Sep 13 11:54:11 UTC 2019]; root of context hierarchy
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 2019-09-13 11:54:11.824 ERROR 6 --- [           main] o.s.boot.SpringApplication               : Application run failed
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: Cannot load configuration class: io.pivotal.spring.cloud.service.config.ConfigClientOAuth2BootstrapConfiguration$ConfigClientOAuth2Configurer
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:414) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:254) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:282) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:126) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70) ~[spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:338) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) ~[spring-boot-2.0.6.RELEASE.jar!/:2.0.6.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.backlog.App.main(App.java:22) ~[classes/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[app/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[app/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[app/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[app/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.IllegalStateException: Unable to load cache item
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:480) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:337) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:110) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	... 31 common frames omitted
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.NoClassDefFoundError: org/springframework/cloud/config/client/ConfigServicePropertySourceLocator
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.privateGetDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.Class.getDeclaredConstructors(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:566) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanFactoryAwareGeneratorStrategy.generate(ConfigurationClassEnhancer.java:253) ~[spring-context-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:492) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.0.10.RELEASE.jar!/:5.0.10.RELEASE]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	... 39 common frames omitted
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT Caused by: java.lang.ClassNotFoundException: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.net.URLClassLoader.findClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[app/:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source) ~[na:na]
+   2019-09-13T04:54:11.82-0700 [APP/PROC/WEB/0] OUT 	... 53 common frames omitted
+   2019-09-13T04:54:11.93-0700 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-09-13T04:54:11.94-0700 [CELL/SSHD/0] OUT Exit status 0
+   2019-09-13T04:54:17.41-0700 [CELL/0] OUT Cell bb1579a8-7173-47c5-8586-5f1737e1816e stopping instance 5b90519d-0e9c-41bb-5772-1a98
+   2019-09-13T04:54:17.41-0700 [CELL/0] OUT Cell bb1579a8-7173-47c5-8586-5f1737e1816e destroying container for instance 5b90519d-0e9c-41bb-5772-1a98
+   2019-09-13T04:54:17.45-0700 [API/9] OUT Process has crashed with type: "web"
+   2019-09-13T04:54:17.47-0700 [API/9] OUT App instance exited with guid 0d0bde30-de75-4a84-aafe-1b10f3d3a0de payload: {"instance"=>"5b90519d-0e9c-41bb-5772-1a98", "index"=>0, "cell_id"=>"bb1579a8-7173-47c5-8586-5f1737e1816e", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>5, "crash_timestamp"=>1568375657489916146, "version"=>"2a4de49f-27bb-4c73-8808-d02454e65fee"}
+   2019-09-13T04:54:17.69-0700 [PROXY/0] OUT Exit status 137
+   2019-09-13T04:54:18.09-0700 [CELL/0] OUT Cell bb1579a8-7173-47c5-8586-5f1737e1816e successfully destroyed container for instance 5b90519d-0e9c-41bb-5772-1a98
