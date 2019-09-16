@@ -2,7 +2,7 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-priyendu-rudra.cfapps.io
+  - route: registration-pal-priyendu-rudra-fish.cfapps.io
   memory: 475M
   instances: 1
   env:

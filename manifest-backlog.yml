@@ -2,7 +2,7 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: backlog-pal-priyendu-rudra.cfapps.io
+  - route: backlog-pal-priyendu-rudra-fish.cfapps.io
   memory: 475M
   instances: 1
   env:
