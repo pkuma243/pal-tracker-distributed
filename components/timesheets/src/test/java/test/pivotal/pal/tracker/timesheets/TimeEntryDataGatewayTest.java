@@ -1,9 +1,9 @@
 package test.pivotal.pal.tracker.timesheets;
 
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
-import io.pivotal.pal.tracker.timesheets.data.TimeEntryDataGateway;
-import io.pivotal.pal.tracker.timesheets.data.TimeEntryFields;
-import io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord;
+import io.pivotal.pal.tracker.oauthserver.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryDataGateway;
+import io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryFields;
+import io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryRecord;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -13,8 +13,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
-import static io.pivotal.pal.tracker.timesheets.data.TimeEntryFields.timeEntryFieldsBuilder;
-import static io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord.timeEntryRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryFields.timeEntryFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryRecord.timeEntryRecordBuilder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TimeEntryDataGatewayTest {

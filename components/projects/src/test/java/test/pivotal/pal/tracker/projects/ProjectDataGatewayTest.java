@@ -1,9 +1,9 @@
 package test.pivotal.pal.tracker.projects;
 
-import io.pivotal.pal.tracker.projects.data.ProjectDataGateway;
-import io.pivotal.pal.tracker.projects.data.ProjectFields;
-import io.pivotal.pal.tracker.projects.data.ProjectRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.oauthserver.projects.data.ProjectDataGateway;
+import io.pivotal.pal.tracker.oauthserver.projects.data.ProjectFields;
+import io.pivotal.pal.tracker.oauthserver.projects.data.ProjectRecord;
+import io.pivotal.pal.tracker.oauthserver.testsupport.TestScenarioSupport;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,8 +11,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 import java.util.Map;
 
-import static io.pivotal.pal.tracker.projects.data.ProjectFields.projectFieldsBuilder;
-import static io.pivotal.pal.tracker.projects.data.ProjectRecord.projectRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.projects.data.ProjectFields.projectFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.projects.data.ProjectRecord.projectRecordBuilder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProjectDataGatewayTest {

@@ -1,9 +1,9 @@
 package test.pivotal.pal.tracker.accounts;
 
-import io.pivotal.pal.tracker.accounts.RegistrationService;
-import io.pivotal.pal.tracker.accounts.data.AccountDataGateway;
-import io.pivotal.pal.tracker.users.data.UserDataGateway;
-import io.pivotal.pal.tracker.users.data.UserRecord;
+import io.pivotal.pal.tracker.oauthserver.accounts.RegistrationService;
+import io.pivotal.pal.tracker.oauthserver.accounts.data.AccountDataGateway;
+import io.pivotal.pal.tracker.oauthserver.users.data.UserDataGateway;
+import io.pivotal.pal.tracker.oauthserver.users.data.UserRecord;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

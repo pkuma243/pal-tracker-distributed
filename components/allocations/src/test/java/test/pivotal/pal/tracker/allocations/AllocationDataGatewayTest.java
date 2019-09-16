@@ -1,9 +1,9 @@
 package test.pivotal.pal.tracker.allocations;
 
-import io.pivotal.pal.tracker.allocations.data.AllocationDataGateway;
-import io.pivotal.pal.tracker.allocations.data.AllocationFields;
-import io.pivotal.pal.tracker.allocations.data.AllocationRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationDataGateway;
+import io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationFields;
+import io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationRecord;
+import io.pivotal.pal.tracker.oauthserver.testsupport.TestScenarioSupport;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -13,8 +13,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
-import static io.pivotal.pal.tracker.allocations.data.AllocationFields.allocationFieldsBuilder;
-import static io.pivotal.pal.tracker.allocations.data.AllocationRecord.allocationRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationFields.allocationFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationRecord.allocationRecordBuilder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AllocationDataGatewayTest {

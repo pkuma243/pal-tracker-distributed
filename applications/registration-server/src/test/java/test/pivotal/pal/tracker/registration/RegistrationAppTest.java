@@ -1,6 +1,6 @@
 package test.pivotal.pal.tracker.registration;
 
-import io.pivotal.pal.tracker.registration.App;
+import io.pivotal.pal.tracker.oauthserver.registration.App;
 import org.junit.Test;
 import org.springframework.web.client.RestTemplate;
 

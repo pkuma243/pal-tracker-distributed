@@ -1,16 +1,16 @@
 package test.pivotal.pal.tracker.allocations;
 
-import io.pivotal.pal.tracker.allocations.AllocationForm;
-import io.pivotal.pal.tracker.allocations.AllocationInfo;
-import io.pivotal.pal.tracker.allocations.data.AllocationFields;
-import io.pivotal.pal.tracker.allocations.data.AllocationRecord;
+import io.pivotal.pal.tracker.oauthserver.allocations.AllocationForm;
+import io.pivotal.pal.tracker.oauthserver.allocations.AllocationInfo;
+import io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationFields;
+import io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationRecord;
 
 import java.time.LocalDate;
 
-import static io.pivotal.pal.tracker.allocations.AllocationForm.allocationFormBuilder;
-import static io.pivotal.pal.tracker.allocations.AllocationInfo.allocationInfoBuilder;
-import static io.pivotal.pal.tracker.allocations.data.AllocationFields.allocationFieldsBuilder;
-import static io.pivotal.pal.tracker.allocations.data.AllocationRecord.allocationRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.AllocationForm.allocationFormBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.AllocationInfo.allocationInfoBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationFields.allocationFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.allocations.data.AllocationRecord.allocationRecordBuilder;
 
 public class TestBuilders {
 

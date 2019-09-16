@@ -1,14 +1,14 @@
 package test.pivotal.pal.tracker.backlog;
 
-import io.pivotal.pal.tracker.backlog.StoryForm;
-import io.pivotal.pal.tracker.backlog.StoryInfo;
-import io.pivotal.pal.tracker.backlog.data.StoryFields;
-import io.pivotal.pal.tracker.backlog.data.StoryRecord;
+import io.pivotal.pal.tracker.oauthserver.backlog.StoryForm;
+import io.pivotal.pal.tracker.oauthserver.backlog.StoryInfo;
+import io.pivotal.pal.tracker.oauthserver.backlog.data.StoryFields;
+import io.pivotal.pal.tracker.oauthserver.backlog.data.StoryRecord;
 
-import static io.pivotal.pal.tracker.backlog.StoryForm.storyFormBuilder;
-import static io.pivotal.pal.tracker.backlog.StoryInfo.storyInfoBuilder;
-import static io.pivotal.pal.tracker.backlog.data.StoryFields.storyFieldsBuilder;
-import static io.pivotal.pal.tracker.backlog.data.StoryRecord.storyRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.backlog.StoryForm.storyFormBuilder;
+import static io.pivotal.pal.tracker.oauthserver.backlog.StoryInfo.storyInfoBuilder;
+import static io.pivotal.pal.tracker.oauthserver.backlog.data.StoryFields.storyFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.backlog.data.StoryRecord.storyRecordBuilder;
 
 public class TestBuilders {
 

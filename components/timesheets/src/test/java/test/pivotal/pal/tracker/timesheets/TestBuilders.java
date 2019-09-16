@@ -1,16 +1,16 @@
 package test.pivotal.pal.tracker.timesheets;
 
-import io.pivotal.pal.tracker.timesheets.TimeEntryForm;
-import io.pivotal.pal.tracker.timesheets.TimeEntryInfo;
-import io.pivotal.pal.tracker.timesheets.data.TimeEntryFields;
-import io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord;
+import io.pivotal.pal.tracker.oauthserver.timesheets.TimeEntryForm;
+import io.pivotal.pal.tracker.oauthserver.timesheets.TimeEntryInfo;
+import io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryFields;
+import io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryRecord;
 
 import java.time.LocalDate;
 
-import static io.pivotal.pal.tracker.timesheets.TimeEntryForm.timeEntryFormBuilder;
-import static io.pivotal.pal.tracker.timesheets.TimeEntryInfo.timeEntryInfoBuilder;
-import static io.pivotal.pal.tracker.timesheets.data.TimeEntryFields.timeEntryFieldsBuilder;
-import static io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord.timeEntryRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.TimeEntryForm.timeEntryFormBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.TimeEntryInfo.timeEntryInfoBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryFields.timeEntryFieldsBuilder;
+import static io.pivotal.pal.tracker.oauthserver.timesheets.data.TimeEntryRecord.timeEntryRecordBuilder;
 
 public class TestBuilders {
 

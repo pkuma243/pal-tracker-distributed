@@ -1,10 +1,10 @@
 package test.pivotal.pal.tracker.accounts;
 
-import io.pivotal.pal.tracker.accounts.RegistrationController;
-import io.pivotal.pal.tracker.accounts.RegistrationForm;
-import io.pivotal.pal.tracker.accounts.RegistrationService;
-import io.pivotal.pal.tracker.users.UserInfo;
-import io.pivotal.pal.tracker.users.data.UserRecord;
+import io.pivotal.pal.tracker.oauthserver.accounts.RegistrationController;
+import io.pivotal.pal.tracker.oauthserver.accounts.RegistrationForm;
+import io.pivotal.pal.tracker.oauthserver.accounts.RegistrationService;
+import io.pivotal.pal.tracker.oauthserver.users.UserInfo;
+import io.pivotal.pal.tracker.oauthserver.users.data.UserRecord;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

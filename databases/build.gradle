@@ -1,5 +1,5 @@
-import io.pivotal.pal.tracker.gradlebuild.CfMigrationPlugin
-import io.pivotal.pal.tracker.gradlebuild.LocalMigrationPlugin
+import io.pivotal.pal.tracker.oauthserver.gradlebuild.CfMigrationPlugin
+import io.pivotal.pal.tracker.oauthserver.gradlebuild.LocalMigrationPlugin
 
 subprojects {
     apply plugin: LocalMigrationPlugin

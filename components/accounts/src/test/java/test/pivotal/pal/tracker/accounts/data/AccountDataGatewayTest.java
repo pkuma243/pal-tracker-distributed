@@ -1,8 +1,8 @@
 package test.pivotal.pal.tracker.accounts.data;
 
-import io.pivotal.pal.tracker.accounts.data.AccountDataGateway;
-import io.pivotal.pal.tracker.accounts.data.AccountRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.oauthserver.accounts.data.AccountDataGateway;
+import io.pivotal.pal.tracker.oauthserver.accounts.data.AccountRecord;
+import io.pivotal.pal.tracker.oauthserver.testsupport.TestScenarioSupport;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 import java.util.Map;
 
-import static io.pivotal.pal.tracker.accounts.data.AccountRecord.accountRecordBuilder;
+import static io.pivotal.pal.tracker.oauthserver.accounts.data.AccountRecord.accountRecordBuilder;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AccountDataGatewayTest {

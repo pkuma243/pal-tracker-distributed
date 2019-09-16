@@ -1,9 +1,9 @@
 package test.pivotal.pal.tracker.users.data;
 
 
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
-import io.pivotal.pal.tracker.users.data.UserDataGateway;
-import io.pivotal.pal.tracker.users.data.UserRecord;
+import io.pivotal.pal.tracker.oauthserver.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.oauthserver.users.data.UserDataGateway;
+import io.pivotal.pal.tracker.oauthserver.users.data.UserRecord;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
