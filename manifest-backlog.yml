@@ -10,7 +10,6 @@ applications:
     JAVA_OPTS: '-Xms64m -Xmx256m'
     GRANT_TYPE: client_credentials
     MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
-    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *
   services:
   - tracker-backlog-database
   - tracker-service-registry
